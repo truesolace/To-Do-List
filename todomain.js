@@ -6,6 +6,7 @@ class Task {
   description;
   dueDate;
 
+  // Must have a name to be created
   constructor(inputName) {
     this.name = inputName;
   }
@@ -36,3 +37,9 @@ class Task {
     this.dueDate = inputDate;
   }
 }
+
+// For testing class, remove when done
+let task = new Task("Do this thing");
+console.log(task.getName);
+task.setDescription("Fill in this sheet tomorrow");
+console.log(task.getDescription);
