@@ -41,6 +41,6 @@ class Task {
 // For testing class, remove when done
 // Known issue: Console log not printing the result of the get method
 let task = new Task("Do this thing");
-console.log(task.getName);
+console.log(task.getName());
 task.setDescription("Fill in this sheet tomorrow");
-console.log(task.getDescription);
+console.log(task.getDescription());
