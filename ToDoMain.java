@@ -5,6 +5,7 @@ import java.util.Scanner;
 class ToDoMain {
 
     public static void main(String[] args) {
+        LinkedList list = new LinkedList();
         System.out.println("What would you like do do?");
         System.out.println("1 = Add Task");
         System.out.println("2 = Delete Task");
@@ -31,6 +32,7 @@ class ToDoMain {
             else {
                 // TODO: Restart loop
             }
+            list.printList();
         }
 
         // TODO: Make linked list to store the todo list
