@@ -38,6 +38,18 @@ public class LinkedList {
         }
     }
 
+    public void printList() {
+        Node pointer = head;
+        // Loop through the list and print every task name and completion status
+        while (pointer != null) {
+            if (pointer.getCompletion()) {
+                System.out.println(pointer.getName() + "(x)");
+            }
+            else {
+                System.out.println(pointer.getName() + "( )");
+            }
+        }
+    }
 
 
 }
