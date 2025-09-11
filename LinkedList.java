@@ -49,6 +49,7 @@ public class LinkedList {
             else {
                 System.out.println(pointer.getTask().getName() + "( )");
             }
+            pointer = pointer.getNext();
         }
     }
     
