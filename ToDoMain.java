@@ -18,7 +18,10 @@ class ToDoMain {
                 userChoice = scn.nextLine();
             }
             if (userChoice == 1) {
-                // TODO: Call add task method here 
+                // TODO: Call add task method here
+                String taskName = scn.nextLine();
+                System.out.println(taskName);   // Temporary debug statement
+                list.push(taskName);
             }
             else if (userChoice == 2) {
                 // TODO: Call delete task method here
