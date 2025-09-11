@@ -6,7 +6,8 @@ public class LinkedList {
         tail = null;
     }
 
-    public void push(Node newNode) {
+    public void push(String taskName) {
+        Node newNode = new Node(taskName);
         // Empty list
         if (head == null) {
             head = newNode;
