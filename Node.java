@@ -1,6 +1,7 @@
 public class Node {
 
-    public Node(Task tmpTask) {
+    public Node(String taskName) {
+        Task tmpTask = new Task(taskName);
         this.task = tmpTask;
         this.next = null;
     }
