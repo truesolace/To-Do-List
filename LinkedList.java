@@ -30,7 +30,7 @@ public class LinkedList {
         else {
             while (pointer != null) {
                 if (pointer.getNext().getTask().getName() == taskName) {
-                    pointer.setNext(pointer.getNext().getNext())
+                    pointer.setNext(pointer.getNext().getNext());
                 }
                 else {
                     pointer = pointer.getNext();
