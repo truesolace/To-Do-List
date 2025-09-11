@@ -12,24 +12,24 @@ class ToDoMain {
         System.out.println("3 = Mark task done/not done");
         System.out.println("0 = Quit");
 
-        int userChoice = 4;
-        while (userChoice != 0) {
+        String userChoice = "4";
+        while (!(userChoice.equals("0"))) {
             try (Scanner scn = new Scanner(System.in)) {
                 userChoice = scn.nextLine();
             }
-            if (userChoice == 1) {
+            if (!(userChoice.equals("1"))) {
                 // TODO: Call add task method here
                 String taskName = scn.nextLine();
                 System.out.println(taskName);   // Temporary debug statement
                 list.push(taskName);
             }
-            else if (userChoice == 2) {
+            else if (!(userChoice.equals("2"))) {
                 // TODO: Call delete task method here
             }
-            else if (userChoice == 3) {
+            else if (!(userChoice.equals("3"))) {
                 // TODO: Call mark task method here
             }
-            else if (userChoice == 0) {
+            else if (!(userChoice.equals("0"))) {
                 System.out.println("Quitting... ");
             }
             else {
