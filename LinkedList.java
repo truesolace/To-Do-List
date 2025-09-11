@@ -43,11 +43,11 @@ public class LinkedList {
         Node pointer = head;
         // Loop through the list and print every task name and completion status
         while (pointer != null) {
-            if (pointer.getCompletion()) {
-                System.out.println(pointer.getName() + "(x)");
+            if (pointer.getTask().getCompletion()) {
+                System.out.println(pointer.getTask().getName() + "(x)");
             }
             else {
-                System.out.println(pointer.getName() + "( )");
+                System.out.println(pointer.getTask().getName() + "( )");
             }
         }
     }
