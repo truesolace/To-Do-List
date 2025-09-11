@@ -1,7 +1,6 @@
 import java.io.*;
 import java.util.Scanner;
 
-
 class ToDoMain {
 
     public static void main(String[] args) {
@@ -16,26 +15,22 @@ class ToDoMain {
         while (!(userChoice.equals("0"))) {
             try (Scanner scn = new Scanner(System.in)) {
                 userChoice = scn.nextLine();
+                if (userChoice.equals("1")) {
+                    // TODO: Call add task method here
+                    String taskName = scn.nextLine();
+                    System.out.println(taskName); // Temporary debug statement
+                    list.push(taskName);
+                } else if (userChoice.equals("2")) {
+                    // TODO: Call delete task method here
+                } else if (userChoice.equals("3")) {
+                    // TODO: Call mark task method here
+                } else if (userChoice.equals("0")) {
+                    System.out.println("Quitting... ");
+                } else {
+                    // TODO: Restart loop
+                }
+                list.printList();
             }
-            if (!(userChoice.equals("1"))) {
-                // TODO: Call add task method here
-                String taskName = scn.nextLine();
-                System.out.println(taskName);   // Temporary debug statement
-                list.push(taskName);
-            }
-            else if (!(userChoice.equals("2"))) {
-                // TODO: Call delete task method here
-            }
-            else if (!(userChoice.equals("3"))) {
-                // TODO: Call mark task method here
-            }
-            else if (!(userChoice.equals("0"))) {
-                System.out.println("Quitting... ");
-            }
-            else {
-                // TODO: Restart loop
-            }
-            list.printList();
         }
 
         // TODO: Make linked list to store the todo list
