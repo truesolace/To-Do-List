@@ -23,12 +23,12 @@ class ToDoMain {
                     list.push(taskName);
                 } else if (userChoice.equals("2")) {
                     // TODO: Call delete task method here
-                    System.out.println("What task would you like to delete?")
+                    System.out.println("What task would you like to delete?");
                     String taskName;
                     try (Scanner delScn = new Scanner(System.in)) {
                         taskName = delScn.nextLine();
                     }
-                    System.out.println("Task deleted.")
+                    System.out.println("Task deleted.");
                 } else if (userChoice.equals("3")) {
                     // TODO: Call mark task method here
                 } else if (userChoice.equals("0")) {
