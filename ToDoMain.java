@@ -33,8 +33,6 @@ class ToDoMain {
                     // TODO: Call mark task method here
                 } else if (userChoice.equals("0")) {
                     System.out.println("Quitting... ");
-                } else {
-                    // TODO: Restart loop
                 }
                 list.printList();
             }
